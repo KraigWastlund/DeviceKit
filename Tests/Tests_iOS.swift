@@ -35,4 +35,7 @@ class DeviceKitTests: XCTestCase {
         XCTAssert(Device.BatteryState.Unplugged(2) > Device.BatteryState.Charging(1))
     }
 
+    func testDescriptionFromIdentifier() {
+        XCTAssert(Device.descriptionForDeviceIdentifier("iPhone7,1") == "iPhone 6 Plus")
+    }
 }
