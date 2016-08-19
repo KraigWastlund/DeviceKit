@@ -192,7 +192,7 @@ public enum Device {
         return mapIdentifierToDevice(identifier).description
     }
     
-    public static func mapIdentifierToDevice(identifier: String) -> Device {
+    private static func mapIdentifierToDevice(identifier: String) -> Device {
         #if os(iOS)
             switch identifier {
             case "iPod5,1":                                 return iPodTouch5
